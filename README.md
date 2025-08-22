@@ -14,9 +14,9 @@ This contains my personal portfolio website and links to my deployed projects.
 ## 📂 Projects (CPE302)
 
 ### 1. Introduction to IoT and WWW
-- [**Activity 1.1 :**](https://cpe302act1-1.netlify.app/) [1.1 Github Repo](https://github.com/tijeyy/cpe302_act1.1)
-- [**Activity 1.2 :**](https://cpe302act1-2.netlify.app/) [1.2 Github Repo ](https://github.com/tijeyy/cpe302_act1.2)
-- [**Activity 2.1 :**](https://cpe302act2-1.netlify.app/) [2.1 Github Repo](https://github.com/tijeyy/cpe302_act2.1)
+- [**Activity 1.1 :**](https://cpe302act1-1.netlify.app/) [Github Repo](https://github.com/tijeyy/cpe302_act1.1)
+- [**Activity 1.2 :**](https://cpe302act1-2.netlify.app/) [Github Repo ](https://github.com/tijeyy/cpe302_act1.2)
+- [**Activity 2.1 :**](https://cpe302act2-1.netlify.app/) [Github Repo](https://github.com/tijeyy/cpe302_act2.1)
 
 ---
 
