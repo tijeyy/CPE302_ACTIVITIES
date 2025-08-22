@@ -21,7 +21,7 @@ This contains my personal portfolio website and links to my deployed projects.
 ---
 
 ### 2. Portfolio Website
-- **Description:** A simple responsive portfolio website created with HTML, CSS, and JavaScript.  
+- **Description:** A simple portfolio website for activities/projects.  
 - **Deployed Link:** [View Portfolio](https://tijeyyy.netlify.app/)
 - **Source Code:** [GitHub Repository](https://github.com/tijeyy/CPE302_ACTIVITIES)
 
