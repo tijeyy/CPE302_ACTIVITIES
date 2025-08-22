@@ -1,113 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trishia Jane Javier | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background: #4a90e2;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      background: #333;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #4a90e2;
-    }
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #4a90e2;
-    }
-    .project {
-      background: white;
-      padding: 15px;
-      margin: 15px 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-  </style>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>TIJEYYY • Portfolio</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
-
-  <header>
-    <h1>Trishia Jane Javier</h1>
-    <p>CPE302 - Portfolio</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
+  <!-- Navbar -->
+  <nav class="navbar" aria-label="Primary">
+    <div class="navwrap">
+      <div class="logo">TIJEYYY</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m Trishia Jane Javier, a passionate and curios Computer Engineering student with a strong foundation in programming and web technologies. </p>
-  </section>
+  <main>
+    <!-- About -->
+    <section id="about" class="section hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Engineer in Progress: Debugging Life One Line at a Time</h1>
+        <p>Hello! I'm <strong>Trishia Jane Javier</strong>, a curious Computer Engineering student 
+		with a strong foundation in programming and web technologies. Passionate about designing intelligent 
+		systems that combine both hardware and software. </p>
+        <a class="btn" href="#projects">View my Projects</a>
+      </div>
+      <!--<div class="hero-art"><img src="assets/profile.png" alt="Cartoon portrait of Trishia" /></div> -->
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Web Development (HTML, CSS, JavaScript)</li>
-      <li>Programming (C, Python, Java)</li>
-      <li>Database Management</li>
-      <li>Embedded Systems (Arduino, ESP32)</li>
-    </ul>
-  </section>
+    <!-- Skills -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" alt="C"></figure>
+        <figure><img src="https://img.icons8.com/?size=512&id=13441&format=png" alt="Python"></figure>
+        <figure><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java"></figure>
+        <figure><img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="HTML"></figure>
+        <figure><img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="CSS"></figure>
+        <figure><img src="https://static.vecteezy.com/system/resources/thumbnails/027/127/463/small_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript"></figure>
+        <figure><img src="https://cdn.prod.website-files.com/64f6a7b65b5aa4b4fbca8590/64f6dc2d7e56444752b9d4a2_figma-3d-logo.svg" alt="Figma"></figure>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+    <!-- CPE302 Activities -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section-title">CPE302 Activities</h2>
+      <p class="section-subtitle">Here are the lists of projects/activities done in CPE302 course subject.</p>
 
-    <div class="project">
-      <h3>Activity 1.1</h3>
-      <p>Intoduction to HTML </p>
-      <a href="https://cpe302act1-1.netlify.app/" target="_blank">View Project</a>
-    </div>
+      <div class="card-grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <header class="card-head">
+            <h3>Intro to IoT and WWW</h3>
+            <button class="toggle" aria-expanded="false" aria-controls="panel-iot-www" aria-label="Toggle Intro to IoT and WWW">+</button>
+          </header>
+          <div id="panel-iot-www" class="card-panel" hidden>
+            <ul class="link-list">
+              <li>Activity 1.1 — <a href="https://cpe302act1-1.netlify.app/" target="_blank" rel="noopener">Netlify</a> <span>|</span> <a href="https://github.com/tijeyy/cpe302_act1.1" target="_blank" rel="noopener">GitHub Repo</a></li>
+              <li>Activity 1.2 — <a href="https://cpe302act1-2.netlify.app/" target="_blank" rel="noopener">Netlify</a> <span>|</span> <a href="https://github.com/tijeyy/cpe302_act1.2" target="_blank" rel="noopener">GitHub Repo</a></li>
+              <li>Activity 2.1 — <a href="https://cpe302act2-1.netlify.app/" target="_blank" rel="noopener">Netlify</a> <span>|</span> <a href="https://github.com/tijeyy/cpe302_act2.1" target="_blank" rel="noopener">GitHub Repo</a></li>
+            </ul>
+          </div>
+        </article>
 
-    <div class="project">
-      <h3>Activity 1.2</h3>
-      <p>Create a page showing the different sections of the fourth movement of Beethoven’s Ninth Symphony</p>
-      <a href="https://cpe302act1-2.netlify.app/" target="_blank">View Project</a>
-    </div>
+        <!-- Placeholders -->
+        <article class="card placeholder"><header class="card-head"><h3>Coming Soon</h3></header></article>
+        <article class="card placeholder"><header class="card-head"><h3>Coming Soon</h3></header></article>
+      </div>
+    </section>
 
-    <div class="project">
-      <h3>Activity 2.1</h3>
-      <p>Create Pedro's softcopy resume</p>
-      <a href="https://cpe302act2-1.netlify.app/" target="_blank">Visit My GitHub</a>
-    </div>
-  </section>
+    <!-- Personal Projects -->
+    <section class="section" aria-labelledby="personal-projects-title">
+      <h2 id="personal-projects-title" class="section-title">My Projects</h2>
+      <p class="section-subtitle">Here are my personal projects done throughout my college journey.</p>
 
-  <footer>
-    <p>&copy; 2025 Trishia Jane Javier | CPE302</p>
-  </footer>
+      <div class="card-grid">
+        <article class="card">
+          <header class="card-head">
+            <h3>Portfolio Website</h3>
+            <button class="toggle" aria-expanded="false" aria-controls="panel-portfolio" aria-label="Toggle Portfolio Website">+</button>
+          </header>
+          <div id="panel-portfolio" class="card-panel" hidden>
+            <p>A simple portfolio website for activities/projects.</p>
+            <p>
+              <a href="https://tijeyyy.netlify.app" target="_blank" rel="noopener">View Portfolio</a>
+              <span>|</span>
+              <a href="https://github.com/tijeyy/CPE302_ACTIVITIES" target="_blank" rel="noopener">GitHub Repo</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
 
+    <!-- Contact -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Contact</h2>
+      <div class="contact-block">
+        <p>Email: <a href="mailto:s.trishiajane.javier@sscr.edu">s.trishiajane.javier@sscr.edu</a></p>
+        <p>Phone: <a href="tel:+639124567859">0912 456 7859</a></p>
+      </div>
+    </section>
+
+    <footer class="footer"><p>© <span id="year"></span> Trishia Jane Javier • TIJEYYY</p></footer>
+  </main>
+
+<script>
+  // Footer year
+  document.addEventListener('DOMContentLoaded',()=>{
+    const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+  });
+
+  // Accordion (one open per .card-grid group, with smooth height)
+  function togglePanel(btn){
+    const grid=btn.closest('.card-grid');
+    const id=btn.getAttribute('aria-controls');
+    const panel=document.getElementById(id);
+    const expanded=btn.getAttribute('aria-expanded')==='true';
+
+    // close others in the same group
+    grid.querySelectorAll('.toggle[aria-expanded="true"]').forEach(b=>{
+      if(b===btn) return;
+      const p=document.getElementById(b.getAttribute('aria-controls'));
+      b.setAttribute('aria-expanded','false'); b.textContent='+';
+      const h=p.scrollHeight; p.style.height=h+'px'; p.getBoundingClientRect(); p.style.height='0px';
+      p.addEventListener('transitionend',function hnd(){p.hidden=true;p.style.height='';p.removeEventListener('transitionend',hnd)});
+    });
+
+    if(!expanded){
+      btn.setAttribute('aria-expanded','true'); btn.textContent='–';
+      panel.hidden=false; const h=panel.scrollHeight; panel.style.height='0px'; panel.getBoundingClientRect(); panel.style.height=h+'px';
+      panel.addEventListener('transitionend',function hnd(){panel.style.height='';panel.removeEventListener('transitionend',hnd)});
+    }else{
+      btn.setAttribute('aria-expanded','false'); btn.textContent='+';
+      const h=panel.scrollHeight; panel.style.height=h+'px'; panel.getBoundingClientRect(); panel.style.height='0px';
+      panel.addEventListener('transitionend',function hnd(){panel.hidden=true;panel.style.height='';panel.removeEventListener('transitionend',hnd)});
+    }
+  }
+
+  // Event delegation
+  document.addEventListener('click',e=>{
+    if(e.target.classList.contains('toggle')) togglePanel(e.target);
+  });
+
+  // Prepare panels for transition
+  document.querySelectorAll('.card .toggle').forEach(btn=>{
+    const p=document.getElementById(btn.getAttribute('aria-controls'));
+    p.style.overflow='hidden'; p.style.transition='height .25s ease';
+  });
+</script>
 </body>
 </html>
