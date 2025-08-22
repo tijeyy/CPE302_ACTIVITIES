@@ -1,5 +1,3 @@
-# CPE302_ACTIVITIES
-
 # 📌 CPE302 Portfolio – Trishia Jane Javier
 
 Welcome to my portfolio repository for **CPE302**.  
