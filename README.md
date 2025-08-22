@@ -14,15 +14,15 @@ This contains my personal portfolio website and links to my deployed projects.
 ## 📂 Projects (CPE302)
 
 ### 1. Introduction to IoT and WWW
-- [**Activity 1.1:**](https://cpe302act1-1.netlify.app/) [1.1 Github repo](https://github.com/tijeyy/cpe302_act1.1)
-- [**Activity 1.2:**](https://cpe302act1-2.netlify.app/) [1.2 Github repo ](https://github.com/tijeyy/cpe302_act1.2)
-- [**Activity 2.1:**](https://cpe302act2-1.netlify.app/) [2.1 Github repo](https://github.com/tijeyy/cpe302_act2.1)
+- [**Activity 1.1 :**](https://cpe302act1-1.netlify.app/) [1.1 Github Repo](https://github.com/tijeyy/cpe302_act1.1)
+- [**Activity 1.2 :**](https://cpe302act1-2.netlify.app/) [1.2 Github Repo ](https://github.com/tijeyy/cpe302_act1.2)
+- [**Activity 2.1 :**](https://cpe302act2-1.netlify.app/) [2.1 Github Repo](https://github.com/tijeyy/cpe302_act2.1)
 
 ---
 
 ### 2. Portfolio Website
 - **Description:** A simple responsive portfolio website created with HTML, CSS, and JavaScript.  
-- **Deployed Link:** [View Portfolio]([https://your-netlify-link.netlify.app](https://tijeyyy.netlify.app/))  
+- **Deployed Link:** [View Portfolio](https://tijeyyy.netlify.app/)
 - **Source Code:** [GitHub Repository](https://github.com/tijeyy/CPE302_ACTIVITIES)
 
 ---
