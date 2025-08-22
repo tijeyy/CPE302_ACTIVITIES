@@ -23,7 +23,7 @@ This contains my personal portfolio website and links to my deployed projects.
 ### 2. Portfolio Website
 - **Description:** A simple portfolio website for activities/projects.  
 - **Deployed Link:** [View Portfolio](https://tijeyyy.netlify.app/)
-- **Source Code:** [GitHub Repository](https://github.com/tijeyy/CPE302_ACTIVITIES)
+- **Source Code:** [GitHub Repository](https://github.com/tijeyy/CPE302_ACTIVITIES/blob/main/index.html)
 
 ---
 
