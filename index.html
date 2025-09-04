@@ -56,7 +56,6 @@
       <p class="section-subtitle">Here are the lists of projects/activities done in CPE302 course subject.</p>
 
       <div class="card-grid">
-        <!-- Card 1 -->
         <article class="card">
           <header class="card-head">
             <h3>Intro to IoT and WWW</h3>
@@ -73,9 +72,9 @@
 		  
         <article class="card">
 			<header class="card-head"><h3>HTML</h3>
-            <button class="toggle" aria-expanded="false" aria-controls="panel-iot-www" aria-label="Toggle HTML">+</button>
+            <button class="toggle" aria-expanded="false" aria-controls="panel-html" aria-label="Toggle HTML">+</button>
           </header>
-		<div id="panel-iot-www" class="card-panel" hidden>
+		<div id="panel-html" class="card-panel" hidden>
             <ul class="link-list">
               <li><a href="activity2-2.html" target="_blank" rel="noopener">Activity 2.2 </a> </li>
               <li><a href="activity2-3.html" target="_blank" rel="noopener">Activity 2.3 </a> </li>
@@ -143,7 +142,7 @@
       const h=p.scrollHeight; p.style.height=h+'px'; p.getBoundingClientRect(); p.style.height='0px';
       p.addEventListener('transitionend',function hnd(){p.hidden=true;p.style.height='';p.removeEventListener('transitionend',hnd)});
     });
-
+q
     if(!expanded){
       btn.setAttribute('aria-expanded','true'); btn.textContent='–';
       panel.hidden=false; const h=panel.scrollHeight; panel.style.height='0px'; panel.getBoundingClientRect(); panel.style.height=h+'px';
@@ -168,6 +167,7 @@
 </script>
 </body>
 </html>
+
 
 
 
