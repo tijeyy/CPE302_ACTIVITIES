@@ -14,9 +14,9 @@ This contains my personal portfolio website and links to my deployed projects.
 ## 📂 Projects (CPE302)
 
 ### 1. Introduction to IoT and WWW
-- Activity 1.1 : My First HTML
-- Activity 1.2 : Beethoven's Ninth Symphony
-- Activity 2.1 : Pedro's Resume
+- [Activity 1.1](https://tijeyyy.netlify.app/activity1) : My First HTML
+- [Activity 1.2](https://tijeyyy.netlify.app/activity1-2) : Beethoven's Ninth Symphony
+- [Activity 2.1](https://tijeyyy.netlify.app/activity2-1) : Pedro's Resume
 
 ---
 
@@ -24,6 +24,12 @@ This contains my personal portfolio website and links to my deployed projects.
 - **Description:** A simple portfolio website for activities/projects.  
 - **Deployed Link:** [View Portfolio](https://tijeyyy.netlify.app/)
 - **Source Code:** [GitHub Repository](https://github.com/tijeyy/CPE302_ACTIVITIES/blob/main/index.html)
+
+---
+
+### 3. HTML
+- [Activity 2.2](https://tijeyyy.netlify.app/activity2-2) : Home Cable Table
+- [Activity 2.3](https://tijeyyy.netlify.app/activity2-3) : HTML Frames
 
 ---
 
