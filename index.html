@@ -9,232 +9,257 @@
 	<link rel="stylesheet" href="index.css" />
 
 <style>
-:root{
-    --bg:#fff;
-	--text:#2c2541;
-	--muted:#6d6486;
-	--primary:#6a0dad;
-	--primary-600:#590aa9;
-    --surface:#f5eaff;
-	--surface-dark:#ede2ff;
-	--radius:18px;
-	--shadow:0 8px 24px rgba(26,5,51,.08)
-}
-  
-*{box-sizing:border-box}
-html{
-	scroll-behavior:smooth
-}
-body{
-	margin:0;
-	font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-	color:var(--text);
-	background:var(--bg)
-	}
-section{
-	scroll-margin-top:80px
-}
+  :root {
+    --bg: #1e1233;          /* #0e0b16 -> dark | #1e1233 -> soft dark | #faf8ff -> light lav */
+    --text: #f0eaff;        /* #f5f5f7 -> white | #f0eaff -> white lav | #2d2345 -> deep purple */
+    --muted: #b9a8d9;       
+    --primary: #9d6bff;     /* #8a2be2 -> purple/blue | #9d6bff -> medium light | #b9a8d9 -> pastel purple */
+    --primary-600: #6a1db9; 
+    
+    --surface: #2a1b47;       /* card background = #1a1325 | #2a1b47 | #ffffff (white) */
+    --surface-dark: #37265c;  /* card header = #241a33 | #37265c | #f2edff (soft lav) */
+    --surface-light: #3f2e66; /* placeholder = #3f3554 | #3f2e66 | #f2edff */
+    --border: #4a3575;        /* #4a3575 | #d2c8f2*/
 
-/* Navbar */
-.navbar{
-	position:sticky;
-	top:0;
-	z-index:1000;
-	background:#fff;
-	padding:15px 40px;
-	box-shadow:0 2px 8px rgba(0,0,0,.05)
-}
-.navwrap{
-	max-width:1200px;
-	margin: 15px auto;
-	display:flex;
-	align-items:center;
-	justify-content:space-between
-}
-.logo{
-	font:700 22px/1 Poppins;
-	color:#4B0082
-}
-.nav-links{
-	list-style:none;
-	display:flex;
-	gap:24px;
-	margin:0;
-	padding:0
-}
-.nav-links a{
-	color:#333;
-	text-decoration:none;
-	font-weight:500;
-	transition:.2s
-}
-.nav-links a:hover{
-	color:var(--primary)
-}
+    --btn-text: #fff;       /* button text */
+    --btn-hover: var(--primary-600);
+    
+    --contact-bg: var(--surface);
+    --placeholder-bg: var(--surface-light);
 
-/* Sections + hero */
-.section{
-	padding:64px min(8vw,64px)}
-.section-title{
-	margin:0 0 10px;
-	font-size:clamp(22px,2.4vw,32px)}
-.section-subtitle{
-	margin:0 0 24px;
-	color:var(--muted)}
-.hero{
-	display:grid;
-	grid-template-columns:1.2fr .8fr;
-	align-items:center;
-	gap:36px;
-	background:radial-gradient(1200px 500px at 20% -10%, #f9f2ff 0%, transparent 60%)}
-.hero h1{
-	margin:0 0 12px;
-	font-size:clamp(28px,3.2vw,44px);
-	line-height:1.15}
-	.hero p{
-	color:var(--muted);
-	max-width:56ch}
-	.hero img{
-	width:min(360px,100%);
-	display:block;
-	margin-left:auto;
-	filter:drop-shadow(0 10px 18px rgba(26,5,51,.15))}
-.btn{
-	display:inline-block;
-	margin-top:18px;
-	padding:12px 22px;
-	background:var(--primary);
-	color:#fff;
-	border-radius:999px;
-	text-decoration:none;
-	font-weight:600;
-	box-shadow:0 8px 16px rgba(106,13,173,.25);
-	transition:.15s}
-.btn:hover{
-	background:var(--primary-600);
-	transform:translateY(-1px);
-	box-shadow:0 12px 20px rgba(106,13,173,.3)}
+    /*--nav-bg: rgba(14, 11, 22, 0.7); /* transparent navbar */
+    --nav-bg: rgba(30, 18, 51, 0.8);  /* translucent dark purple */
+    /*--nav-bg: rgba(250, 248, 255, 0.85); /* slightly transparent pastel */
+    --nav-blur: blur(10px);
+    
+    --radius: 18px;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    /*--shadow: 0 8px 24px rgba(123, 92, 255, 0.12); /* purple shadow */
+  }
 
-/* Skills */
-.skills-grid{
-	display:grid;
-	grid-template-columns:repeat(auto-fit,minmax(90px,1fr));
-	gap:22px;
-	justify-items:center;
-	margin-top: 20px}
-.skills-grid figure{
-	margin:0;
-	text-align:center}
-.skills-grid img{
-	width:56px;
-	height:56px;
-	object-fit:contain;
-	transition:transform .2s}
-.skills-grid img:hover{
-	transform:scale(1.06)}
+    
+  *{box-sizing:border-box}
+  html{
+    scroll-behavior:smooth
+  }
+  body{
+    margin:0;
+    font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    color:var(--text);
+    background:var(--bg)
+    }
+  section{
+    scroll-margin-top:80px
+  }
 
-  /* Cards + accordion */
-.card-grid{
-	  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 22px;
-  align-items: start;
-	gap:22px}
-.card{
-	background:var(--surface);
-	border-radius:var(--radius);
-	box-shadow:var(--shadow);
-	overflow:hidden;
-	transition:transform .15s;
-	flex: 0 1 260px
-	}
-.card:hover{
-	transform:translateY(-4px)}
-.card-head{
-	background:var(--surface-dark);
-	display:grid;
-	grid-template-columns:1fr auto;
-	align-items:center;
-	gap:10px;
-	padding:16px 18px}
-.card-head h3{
-	margin:0;
-	font-size:18px;
-	color:var(--primary)}
-.toggle{
-	border:0;
-	background:#fff;
-	color:var(--primary);
-	width:34px;
-	height:34px;
-	border-radius:10px;
-	font-size:20px;
-	line-height:1;
-	cursor:pointer;
-	box-shadow:0 4px 10px rgba(106,13,173,.18);
-	transition:.15s}
-.toggle:hover{
-	transform:translateY(-1px);
-	background:#faf7ff}
-.card-panel{
-	padding:16px 18px 20px;
-	border-top:1px dashed #e3d6ff}
-.card-panel[hidden]{
-	display:none}
-.link-list{
-	list-style:none;
-	margin:0;
-	padding:0;
-	text-align: center}
-.link-list li{padding:8px 0}
-.link-list a{
-	color:var(--primary);
-	font-weight:600;
-	text-decoration:none}
-.link-list a:hover{
-	text-decoration:underline}
-.link-list span{
-	color:#b09ad8;
-	padding:0 6px}
-.placeholder .card-head{
-	background:#f8f3ff}
-.placeholder .card-panel{
-	display:none}
+  /* Navbar */
+  .navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background: var(--nav-bg);
+    padding:15px 40px;
+    box-shadow:0 2px 8px rgba(0,0,0,.2)
+  }
+  .navwrap{
+    max-width:1200px;
+    margin: 15px auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+  }
+  .logo{
+    font:700 22px/1 Poppins;
+    color: var(--primary);
+  }
+  .nav-links{
+    list-style:none;
+    display:flex;
+    gap:24px;
+    margin:0;
+    padding:0
+  }
+  .nav-links a{
+    color:var(--text);
+    text-decoration:none;
+    font-weight:500;
+    transition:.2s
+  }
+  .nav-links a:hover{
+    color:var(--primary)
+  }
 
-/* Contact + footer */
-.contact{
-	background:radial-gradient(900px 380px at 70% 0%, #f2e9ff 0%, transparent 60%)
-	}
-.contact-block{
-	display:inline-block;
-	background:#fff;
-	padding:22px;
-	border-radius:16px;
-	box-shadow:var(--shadow)
-}
-.contact a{
-	color:var(--primary);
-	font-weight:600;
-	text-decoration:none
-}
-.contact a:hover{
-	text-decoration:underline
-}
-.footer{
-	color:#8b7aa8;
-	text-align:center;
-	padding:28px min(8vw,64px) 60px
-}
+  /* Sections */
+  .section{
+    padding:64px min(8vw,64px)}
+  .section-title{
+    margin:0 0 10px;
+    font-size:clamp(22px,2.4vw,32px)}
+  .section-subtitle{
+    margin:0 0 24px;
+    color:var(--muted)}
 
-/* Responsive tweaks */
-@media (max-width:1024px){
-	.hero{
-		grid-template-columns:1fr
-	}
-	.hero .hero-art{
-		order:-1
-	}
+  .btn{
+    display:inline-block;
+    margin-top:18px;
+    padding:12px 22px;
+    background:var(--primary);
+    color:var(--btn-text);
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:600;
+    box-shadow: 0 8px 16px rgba(138, 43, 226, .25);
+    transition:.15s}
+  .btn:hover{
+    background:var(--btn-hover);
+    transform:translateY(-1px);
+    box-shadow: 0 8px 16px rgba(138, 43, 226, .25);
+  }
+    /* Cards + accordion */
+  .card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    align-items: start;
+    gap:22px}
+  .card{
+    background:var(--surface);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    overflow:hidden;
+    transition:transform .15s;
+    flex: 0 1 260px
+    }
+  .card:hover{
+    transform:translateY(-4px)}
+  .card-head{
+    background:var(--surface-dark);
+    display:grid;
+    grid-template-columns:1fr auto;
+    align-items:center;
+    gap:10px;
+    padding:16px 18px}
+  .card-head h3{
+    margin:0;
+    font-size:18px;
+    color:var(--primary)}
+  .toggle{
+    border:0;
+    background:#fff;
+    color:var(--primary);
+    width:34px;
+    height:34px;
+    border-radius:10px;
+    font-size:20px;
+    line-height:1;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(106,13,173,.18);
+    transition:.15s}
+  .toggle:hover{
+    transform:translateY(-1px);
+    background:#faf7ff}
+  .card-panel{
+    padding:16px 18px 20px;
+    border-top:1px dashed #e3d6ff}
+  .card-panel[hidden]{
+    display:none}
+  .card-panel a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color .2s;
+  }
+  .card-panel a:hover {
+    color: var(--primary-600);
+    text-decoration: underline;
 }
+  .link-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align: center}
+  .link-list li{padding:8px 0}
+  .link-list a{
+    color:var(--primary);
+    font-weight:600;
+    text-decoration:none}
+  .link-list a:hover{
+    text-decoration:underline}
+  .link-list span{
+    color:#b09ad8;
+    padding:0 6px}
+  .placeholder .card-head{
+    background:var(--placeholder-bg);}
+  .placeholder .card-panel{
+    display:none}
+
+  /* Contact + footer */
+  .contact{
+    background: radial-gradient(900px 380px at 70% 0%, var(--surface-dark) 0%, transparent 60%);
+    }
+  .contact-block{
+    display:inline-block;
+    background:var(--contact-bg);
+    padding:22px;
+    border-radius:16px;
+    box-shadow:var(--shadow);
+    border: 1px solid var(--border);
+  }
+  .contact a{
+    color:var(--primary);
+    font-weight:600;
+    text-decoration:none
+  }
+  .contact a:hover{
+    text-decoration:underline
+  }
+  .footer{
+    color:#8b7aa8;
+    text-align:center;
+    padding:28px min(8vw,64px) 60px
+  }
+
+  /* Responsive tweaks */
+  @media (max-width:1024px){
+    .hero{
+      grid-template-columns:1fr
+    }
+    .hero .hero-art{
+      order:-1
+    }
+  }
+
+  /* Header Styles */
+  #header-splash {
+    width: 100%;
+    height: 90vh; /* adjust how tall you want it */
+    background: radial-gradient(circle at center, var(--surface-dark), var(--bg));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .splash-inner h1 {
+    font-family: Poppins, sans-serif;
+    font-size: clamp(32px, 6vw, 72px);
+    font-weight: 700;
+    color: var(--primary);
+    text-shadow: 0 0 8px var(--primary), 0 0 20px var(--primary-600);
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  .splash-inner .subtitle {
+    margin-top: 12px;
+    font-size: clamp(14px, 2vw, 20px);
+    color: var(--muted);
+    font-weight: 500;
+    opacity: 0;              
+    white-space: nowrap;     
+    overflow: hidden;
+  }
 </style>
 
 
@@ -253,33 +278,15 @@ section{
     </div>
   </nav>
 
+  <!-- HEADER (Scramble Effect) -->
+  <header id="header-splash">
+    <div class="splash-inner">
+      <h1 id="scramble-name"></h1>
+      <p class="subtitle"></p>
+    </div>
+  </header>
+
   <main>
-    <!-- About -->
-    <section id="about" class="section hero" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <h1 id="hero-title">Engineer in Progress: Debugging Life One Line at a Time</h1>
-        <p>Hello! I'm <strong>Trishia Jane Javier</strong>, a curious Computer Engineering student 
-		with a strong foundation in programming and web technologies. Passionate about designing intelligent 
-		systems that combine both hardware and software. </p>
-        <a class="btn" href="#projects">View my Projects</a>
-      </div>
-      <!--<div class="hero-art"><img src="assets/profile.png" alt="Cartoon portrait of Trishia" /></div> -->
-    </section>
-
-    <!-- Skills 
-    <section id="skills" class="section" aria-labelledby="skills-title">
-      <h2 id="skills-title" class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/1200px-C_Programming_Language.svg.png" alt="C"></figure>
-        <figure><img src="https://img.icons8.com/?size=512&id=13441&format=png" alt="Python"></figure>
-        <figure><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java"></figure>
-        <figure><img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" alt="HTML"></figure>
-        <figure><img src="https://cdn-icons-png.flaticon.com/512/5968/5968242.png" alt="CSS"></figure>
-        <figure><img src="https://static.vecteezy.com/system/resources/thumbnails/027/127/463/small_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript"></figure>
-        <figure><img src="https://cdn.prod.website-files.com/64f6a7b65b5aa4b4fbca8590/64f6dc2d7e56444752b9d4a2_figma-3d-logo.svg" alt="Figma"></figure>
-      </div>
-    </section>-->
-
     <!-- CPE302 Activities -->
     <section id="projects" class="section" aria-labelledby="projects-title">
       <h2 id="projects-title" class="section-title">CPE302 Activities</h2>
@@ -421,11 +428,51 @@ section{
     const p=document.getElementById(btn.getAttribute('aria-controls'));
     p.style.overflow='hidden'; p.style.transition='height .25s ease';
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const fullName = "Trishia Jane T. Javier";
+    const scrambleEl = document.getElementById("scramble-name");
+    const subtitleEl = document.querySelector(".subtitle");
+    const symbols = "<>#@{}[]&$%!?/";
+    let progress = 0;
+
+    // Scramble effect for name
+    const interval = setInterval(() => {
+      scrambleEl.textContent = fullName
+        .split("")
+        .map((char, idx) =>
+          idx < progress
+            ? fullName[idx]
+            : symbols[Math.floor(Math.random() * symbols.length)]
+        )
+        .join("");
+
+      if (progress >= fullName.length) {
+        clearInterval(interval);
+
+        // Start typing subtitle after scramble done
+        setTimeout(() => typeSubtitle("Computer Engineering Student"), 500);
+      }
+
+      progress += 0.5; // speed of reveal
+    }, 45);
+
+    // Typing animation
+    function typeSubtitle(text) {
+      let i = 0;
+      subtitleEl.style.opacity = 1; // make visible
+      const typing = setInterval(() => {
+        subtitleEl.textContent = text.slice(0, i);
+        i++;
+        if (i > text.length) {
+          clearInterval(typing);
+        }
+      }, 80);
+    }
+  });
 </script>
 </body>
 </html>
-
-
 
 
 
