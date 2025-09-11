@@ -33,6 +33,13 @@ This contains my personal portfolio website and links to my deployed projects.
 
 ---
 
+### 4. CSS & JAVASCRIPT
+- Activity 3.1
+- Activity 3.2
+- [Activity 3.3](https://tijeyyy.netlify.app/activity3-3) : Triangle Function
+
+---
+
 ## 📝 Notes
 - This repository is created for **CPE302** coursework.  
 - All projects are deployed on **Netlify** for easier access and live previews.  
