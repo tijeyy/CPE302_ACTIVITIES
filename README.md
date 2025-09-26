@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0dac55be-f765-4e93-b216-8f113d537df9" /># 📌 CPE302 Portfolio – Trishia Jane Javier
+# 📌 CPE302 Portfolio – Trishia Jane Javier
 
 Welcome to my portfolio repository for **CPE302**.  
 This contains my personal portfolio website and links to my deployed projects.
